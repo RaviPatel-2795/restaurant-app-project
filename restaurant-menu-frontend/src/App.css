@@ -1,0 +1,53 @@
+#root {
+max-width: 1280px;
+margin: 0 auto;
+padding: 1rem;
+text-align: center;
+}
+
+.restaurant-id-input {
+height: 27px;
+border-radius: 5px;
+padding: 5px;
+border: 1px solid #ccc;
+}
+
+.restaurant-id-container {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+}
+
+.card {
+padding: 2em;
+}
+
+ul{
+padding: 0;
+}
+
+.menu-item {
+list-style-type: none;
+}
+
+.loader {
+width: 25px;
+height: 25px;
+border: 3px solid #FFF;
+border-bottom-color: transparent;
+border-radius: 50%;
+display: inline-block;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+} 

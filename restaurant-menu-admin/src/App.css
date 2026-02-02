@@ -1,0 +1,81 @@
+#root {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-login {
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+  display: grid;
+  gap: 1em;
+}
+
+.card {
+  padding: 2em;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 1em;
+}
+
+.actionBtn {
+  cursor: pointer;
+  width: 45px;
+  padding: 0 !important;
+  position: relative;
+}
+
+.actionBtn.viewMode:after {
+  content: "";
+  position: absolute;
+  bottom: calc(height / 2); /* Start from the bottom */
+  right: 0; /* Or right: 0 */
+  width: 1px; /* Thickness of the line */
+  height: 50%; /* Half the container's height */
+  background-color: #515151; /* Color of the line */
+}
+
+
+.loader {
+width: 25px;
+height: 25px;
+border: 3px solid #FFF;
+border-bottom-color: transparent;
+border-radius: 50%;
+display: inline-block;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+.editCellHighlight {
+  background-color: #333333;
+}
+
+.errorCellHighlight {
+  background-color: #cc0000;
+}
+
+#qrCodeContainer {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
